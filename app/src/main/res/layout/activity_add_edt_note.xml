@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/text_bg"
+    tools:context=".AddEdtNoteActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="My TODO"
+        app:titleTextColor="@android:color/white"
+        app:subtitle="Plan today Not Tomorrow."
+        app:subtitleTextColor="@android:color/white"
+        android:layout_marginBottom="5dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"/>
+    <EditText
+        android:layout_below="@id/toolbar"
+        android:id="@+id/idEDTTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Note Title"
+        android:paddingStart="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/idEDTDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idBTNAddUpdate"
+        android:layout_below="@id/idEDTTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="10dp"
+        android:gravity="start|top"
+        android:hint="Enter Note Description"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/idBTNAddUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28sp"
+        android:layout_marginTop="28sp"
+        android:layout_marginEnd="28sp"
+        android:layout_marginBottom="28sp"
+        android:background="@drawable/btn_backgn"
+        android:text="Button"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
